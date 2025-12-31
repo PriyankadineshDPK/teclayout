@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+/* Basic reset and styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*navbar*/
+.navbar {
+    background-color: #e6b3ff; 
+    padding: 10px 5%;
+    color: black;
+}
+
+.top-section, .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px; 
+    height: 40px;
+    height: auto;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 20px;
+    color:black;
+    font-weight: bolder;
+    margin-left: 0;
+}
+
+
+.search-bar {
+    position: relative;
+    width: 400px; align-items: center;
+    margin-left: 50px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 20px 40px 20px 15px; 
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 400px;
+    
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+    width: 30px;
+    margin-right: 0;
+}
+.nav-icons-register {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.register-btn {
+    background-color: #13B82E;
+    color:black;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.register-btn:hover {
+    background-color: #13B82E;
+}
+.nav-links ul {
+    list-style: none; 
+    display: flex;
+    margin-left: 10px;
+    margin-right: 30px;
+    justify-content: space-between;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0 5px 15px;
+    display: block;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-links ul li a:hover {
+    background: rgb(121, 121, 243);
+    border: 1px solid rgb(107, 107, 222);
+}
+@media (max-width: 992px) {
+    .top-section, .bottom-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }}
+
+.brands-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
+    max-width: 600px; 
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    align-items: center;
+    margin-left: 500px;
+    gap: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+}
+
+.brand-item {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-left: 5px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+   
+    font-weight: bold;
+    color: #fff; 
+}
+@media screen and (min-width: 480px) {
+    .brands-container 
+{
+        grid-template-columns: 1fr 1fr; 
+    }
+    .brand-item {
+        /* stretch */
+    }
+}
+h1{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+  margin-left: 20px;
+}
+a:hover{
+    background-color: rgb(94, 94, 215);
+    border: 5px solid blue;
+    cursor: pointer;
+}
+/*footer*/
+footer{
+    background-color: #DCFF16;
+    padding: 40px 5%;
+    color:black ;
+}.f-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+
+}.f-l-section{
+    flex-basis: 25%;
+ width: 300px;
+}.lo{
+    width: 200px;
+    height: auto;
+}.f-name{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10px;
+}.f-links, .f-contact{
+flex-basis: 15%;
+font-size: 23px;
+width: 150px;
+padding-top: 30px;
+}h4{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: black;
+}ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}.f-social{
+    margin-top: 20px;
+    text-align: right;
+    gap: 80px;
+}.f-social a{
+    color: black;
+    font-size: 30px;
+    margin-left: 15px;
+    gap: 30px;
+    text-decoration: none;
+}@media(max-width:768px){
+    .f-container{
+        display: flex;
+    }.f-l-section{
+        display: flex;
+    }.f-social{
+        display: flex;
+    }
+}
+
+</style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="top-section">
+            <div class="logo-container">
+                
+                <img src="logo.png" alt="Company Logo" class="logo">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search For">
+                    <i class="fa fa-search search-icon"></i>
+                </div>
+            </div>
+             <div class="nav-icons-register">
+                <i class="fa fa-shopping-cart icon"></i>
+                <i class="fa fa-bell icon"></i>
+                <button class="register-btn">Register</button>
+            </div>
+        </div>
+<div class="bottom-section">
+            <span class="company-name">Tech Company</span>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="http://127.0.0.1:5501/home.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="http://127.0.0.1:5501/product.html">Product</a></li>
+                    <li><a href="http://127.0.0.1:5501/service.html">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="http://127.0.0.1:5501/blog.html">Blogs</a></li>
+                </ul>
+            </nav>
+        </div></header> 
+
+   <h1>All Brand Are Available</h1>
+        <h2>Mobiles Brands</h2>
+     <div class="brands-container">
+      <div class="brand-item ">
+        <a href="http://127.0.0.1:5501/vivo.html">
+           <img src="Rectangle 234.png" alt="vivo"></a>
+        </div>      
+        <div class="brand-item">
+            <a href="http://127.0.0.1:5501/vivo.html">
+        <img src="Rectangle 227.png" alt="realme"></a>
+        </div>      
+        <div class="brand-item">
+            <img src="Rectangle 228.png" alt="mi">
+        </div>       
+        <div class="brand-item">
+                    <img src="Rectangle 213.png" alt="iphone">
+        </div>       
+        <div class="brand-item">
+            <a href="http://127.0.0.1:5501/vivo.html">
+            <img src="Rectangle 290.png" alt="appo"></a>
+        </div>     
+        <div class="brand-item">
+            <img src="Rectangle 215.png" alt="infinx">
+        </div>      
+        <div class="brand-item">
+             <img src="Rectangle 240.png" alt="asus">
+        </div> 
+        <div class="brand-item">
+             <img src="Rectangle 217.png" alt="oneplus">
+        </div>
+        <div class="brand-item">
+             <img src="Rectangle 235.png" alt="iqoo">
+        </div>
+        <div class="brand-item">
+            <img src="Rectangle 243.png" alt="poco">
+        </div>
+    </div>
+<h2>Electro Product Brands</h2>
+     <div class="brands-container">
+      <div class="brand-item ">
+        <a href="http://127.0.0.1:5501/vivo.html">
+           <img src="Rectangle 289.png" alt="lg"></a>
+        </div>      
+        <div class="brand-item">
+            <a href="http://127.0.0.1:5501/vivo.html">
+        <img src="Rectangle 214.png" alt="panasonic"></a>
+        </div>      
+        <div class="brand-item">
+            <img src="Rectangle 239.png" alt="voltas">
+        </div>       
+        <div class="brand-item">
+                    <img src="Rectangle 216.png" alt="bosch">
+        </div>       
+        <div class="brand-item">
+            <img src="Rectangle 241.png" alt="daikin">
+        </div>     
+        <div class="brand-item">
+            <img src="Rectangle 218.png" alt="haier">
+        </div>      
+        <div class="brand-item">
+             <img src="Rectangle 219.png" alt="carrier">
+        </div> 
+        <div class="brand-item">
+            <a href="http://127.0.0.1:5501/vivo.html">
+             <img src="Rectangle 220.png" alt="hitachi"></a>
+        </div>
+        <div class="brand-item">
+             <img src="Rectangle 221.png" alt="sony">
+        </div>
+        <div class="brand-item">
+            <img src="Rectangle 222.png" alt="goorej">
+        </div>
+        <div class="brand-item ">
+            <a href="http://127.0.0.1:5501/vivo.html">
+            <img src="Rectangle 223.png" alt="whirlpool"></a>
+        </div>
+        <div class="brand-item ">
+            <img src="Rectangle 224.png" alt="samsung">
+        </div>
+        <div class="brand-item ">
+            <img src="Rectangle 225.png" alt="philips">
+        </div>
+        <div class="brand-item ">
+            <img src="Rectangle 226.png" alt="ll">
+        </div>
+    </div>
+    <h2>Gaged Brands</h2>
+    <div class="brands-container">
+    <div class="brand-item ">
+            <img src="Rectangle 227.png" alt="realme">
+        </div>
+<div class="brand-item ">
+            <img src="Rectangle 236.png" alt="mi">
+        </div>
+  <div class="brand-item ">
+            <img src="Rectangle 229.png" alt="mr">
+        </div>
+        <div class="brand-item ">
+            <img src="Rectangle 230.png" alt="boat">
+        </div>
+        <div class="brand-item ">
+            <img src="Rectangle 231.png" alt="fasttrack">
+        </div>
+        <div class="brand-item ">
+            <img src="Rectangle 225.png" alt="philips">
+        </div>
+        </div>
+
+         <footer>
+<div class="f-container">
+    <div class="f-l-section">
+        <img src="logogreen.png" alt="company logo" class="lo">
+        <div class="f-name">Tech Company</div>
+    </div>
+    <div class="f-links">
+        <h4>Company</h4>
+        <ul>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Testimonial</a></li>
+        </ul>
+    </div>
+    <div class="f-links">
+        <h4>Support</h4>
+        <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Webians</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </div>
+<div class="f-links">
+    <h4>Links</h4>
+    <ul>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">All in ond</a></li>
+    </ul>
+</div>
+<div class="f-contact">
+    <h4>Contact US</h4>
+    <div class="contact-info">
+        <p>&#9742; +917789879034</p>
+        <p>&#9993; nazer2000@gmail</p>
+    </div>
+</div>
+</div>
+<div class="f-social">
+    <a href="#" class="google"><i class="fab fa-google"></i></a>
+    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+
+        </div>
+    </footer>
+</body>
+</html>

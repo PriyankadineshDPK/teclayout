@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+    body{
+    font-family:   Inika;
+}
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*navbar*/
+.navbar {
+    background-color: #e6b3ff; 
+    padding: 10px 5%;
+    color: black;
+}
+
+.top-section, .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px; 
+    height: 40px;
+    height: auto;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 20px;
+    color:black;
+    font-weight: bolder;
+    margin-left: 0;
+}
+
+
+.search-bar {
+    position: relative;
+    width: 400px; align-items: center;
+    margin-left: 50px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 20px 40px 20px 15px; 
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 400px;
+    
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+    width: 30px;
+    margin-right: 0;
+}
+.nav-icons-register {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.register-btn {
+    background-color: #13B82E;
+    color:black;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.register-btn:hover {
+    background-color: #13B82E;
+}
+.nav-links ul {
+    list-style: none; 
+    display: flex;
+    margin-left: 10px;
+    margin-right: 30px;
+    justify-content: space-between;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0 5px 15px;
+    display: block;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-links ul li a:hover {
+    background: rgb(121, 121, 243);
+    border: 1px solid rgb(107, 107, 222);
+}
+@media (max-width: 992px) {
+    .top-section, .bottom-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }}
+
+.g-container{
+    display: flex;
+    align-items:center ;
+    background-color: #e6b3ff;
+    border: 1px solid #e6b3ff;
+    gap: 10px;
+    width: 1200px;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-left: 50px;
+
+}.g-image{
+    width:80px ;
+    height: auto;
+    border-radius: 7px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}.g-content{
+padding-left: 5px;
+    font-size: 25px;
+}
+.g-image, .g-content{
+    flex: 1;
+}.g-container1{
+    display: flex;
+    align-items:center ;
+    background-color:orange;
+    border: 1px solid orange;
+    gap: 10px;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    width: 1200px;
+    padding-left: 30px;
+    margin-left: 50px;
+padding-top: 30px;
+}.g-image1{
+    width:80px ;
+    height: auto;
+    border-radius: 7px;
+}.g-content1{
+    margin-left: 0;
+    font-size: 25px;
+}
+.g-image1, .g-content1{
+    flex: 1;
+}.g-container2{
+    display: flex;
+    align-items:center ;
+    background-color: #DCFF16;
+    border: 1px solid #DCFF16;
+    gap: 50px;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-left: 60px;
+    width: 1200px;
+    margin-bottom: 150px;
+}.g-image2{
+    width:80px ;
+    height: auto;
+    border-radius: 7px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 30px;
+
+}.g-content2{
+    margin-left: 0;
+    font-size: 25px;
+    padding-left: 2px;
+
+}
+.g-image2, .g-content2{
+    flex: 1;
+}
+/*footer*/
+footer{
+    background-color: #DCFF16;
+    padding: 40px 5%;
+    color:black ;
+}.f-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}.f-l-section{
+    flex-basis: 25%;
+ width: 300px;
+}.lo{
+    width: 200px;
+    height: auto;
+}.f-name{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10px;
+}.f-links, .f-contact{
+flex-basis: 15%;
+font-size: 23px;
+width: 150px;
+padding-top: 30px;
+}h4{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: black;
+}ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}.f-social{
+    margin-top: 20px;
+    text-align: right;
+    gap: 80px;
+}.f-social a{
+    color: black;
+    font-size: 30px;
+    margin-left: 15px;
+    gap: 30px;
+    text-decoration: none;
+}@media(max-width:768px){
+    .f-container{
+        display: flex;
+    }.f-l-section{
+        display: flex;
+    }.f-social{
+        display: flex;
+    }
+}
+
+</style>
+</head>
+<body>
+  <header class="navbar">
+        <div class="top-section">
+            <div class="logo-container">
+                
+                <img src="logo.png" alt="Company Logo" class="logo">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search For">
+                    <i class="fa fa-search search-icon"></i>
+                </div>
+            </div>
+             <div class="nav-icons-register">
+                <i class="fa fa-shopping-cart icon"></i>
+                <i class="fa fa-bell icon"></i>
+                <button class="register-btn">Register</button>
+            </div>
+        </div>
+<div class="bottom-section">
+            <span class="company-name">Tech Company</span>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="http://127.0.0.1:5501/home.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="http://127.0.0.1:5501/product.html">Product</a></li>
+                    <li><a href="http://127.0.0.1:5501/service.html">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="http://127.0.0.1:5501/blog.html">Blogs</a></li>
+                </ul>
+            </nav>
+        </div></header> 
+        <div class="g-container">
+            <div class="g-image">
+                <img src="Rectangle 287.png" alt="rectangle 287" class="left"></div>
+                <div class="g-content">
+                <h4>Amanda Faulkner(New Zealand)</h4>
+                <p class="right"> "My Apple Watch kept sending alerts that my<br>
+                resting heart rate was way higher than normal..<br>
+            I eventually decide to see my GP. That decision<br>
+        probably saved my life- it led to a diagnosis of actue<br>
+    myeloid leukemia</p>
+            </div>
+        </div>
+       
+        <div class="g-container1">
+            <div class="g-image1">
+                <img src="Rectangle 261.png" alt="rectangle 261" class="left"></div>
+                <div class="g-content1">
+                <h4>Sneha Saha(Delhi, India)</h4>
+                <p class="right"> "If the Apple Watch had not alerted me of thealerted<br>
+serious condition around midnight, I would <br>
+have lost my life." Her atrial fibrillation-<br>
+heart rate exceeding 230bpm- was detected<br>
+during a potentially fatal episode prompting<br>
+emergency care</p>
+            </div>
+        </div>
+     <div class="g-container2">
+            <div class="g-image2">
+                <img src="Rectangle 262.png" alt="rectangle 262" class="left"></div>
+                <div class="g-content2">
+                <h4>Frank Haggerty(Nwe Jersey,USA)</h4>
+<p class="right">"Quite frankly had I not had the watch on, I<br>
+    wouldn't be sitting here today. It's my best friend,<br>
+    " His Apple Watch detected a resting heart rate of<br>
+     just 30bpm, leading to a pacemaker implant for<br>
+    complete heart block </p>
+            </div>
+        </div>  </div>
+        
+        <footer>
+<div class="f-container">
+    <div class="f-l-section">
+        <img src="logogreen.png" alt="company logo" class="lo">
+        <div class="f-name">Tech Company</div>
+    </div>
+    <div class="f-links">
+        <h4>Company</h4>
+        <ul>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Testimonial</a></li>
+        </ul>
+    </div>
+    <div class="f-links">
+        <h4>Support</h4>
+        <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Webians</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </div>
+<div class="f-links">
+    <h4>Links</h4>
+    <ul>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">All in ond</a></li>
+    </ul>
+</div>
+<div class="f-contact">
+    <h4>Contact US</h4>
+    <div class="contact-info">
+        <p>&#9742; +917789879034</p>
+        <p>&#9993; nazer2000@gmail</p>
+    </div>
+</div>
+</div>
+<div class="f-social">
+    <a href="#" class="google"><i class="fab fa-google"></i></a>
+    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+
+        </div>
+    </footer>
+    
+
+</body>
+</html>

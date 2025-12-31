@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+<title>Home</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family:   Inika;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*navbar*/
+.navbar {
+    background-color: #e6b3ff; 
+    padding: 10px 5%;
+    color: black;
+}
+
+.top-section, .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px; 
+    height: 40px;
+    height: auto;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 20px;
+    color:black;
+    font-weight: bolder;
+    margin-left: 0;
+}
+
+
+.search-bar {
+    position: relative;
+    width: 400px; align-items: center;
+    margin-left: 50px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 20px 40px 20px 15px; 
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 400px;
+    
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+    width: 30px;
+    margin-right: 0;
+}
+.nav-icons-register {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.register-btn {
+    background-color: #13B82E;
+    color:black;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.register-btn:hover {
+    background-color: #13B82E;
+}
+.nav-links ul {
+    list-style: none; 
+    display: flex;
+    margin-left: 10px;
+    margin-right: 30px;
+    justify-content: space-between;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0 5px 15px;
+    display: block;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-links ul li a:hover {
+    background: rgb(121, 121, 243);
+    border: 1px solid rgb(107, 107, 222);
+}
+@media (max-width: 992px) {
+    .top-section, .bottom-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .logo-container, .nav-icons-register, .nav-links ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .search-bar {
+        width: 60%;
+    }
+    /*startup*/
+}.start-container{
+    display: flex;
+   background-image: url(images.jpg);
+   color: white;
+   border-radius: 10px;
+   overflow: hidden;
+   margin: auto;
+}.start-section{
+    flex-grow: 1;
+    padding: 50px 40px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}.start-section{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}.start-section p{
+    font-size: 30px;
+    line-height: 1.5;
+    }.robo-image{
+        width: 50%;
+height:auto;
+margin-left: 100px;
+display: block;
+border-radius: 10px;
+border: 1px solid rgb(214, 211, 211);
+padding-top: 20px;
+padding-bottom: 30px;
+padding-right: 10px;
+    }
+@media(max-width: 786px){
+    .start-container{
+        flex-direction: column;
+    }.start-section{
+        padding: 30px 20px;
+    }
+}
+.l-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}.start-btn{
+   background-color: rgb(207, 98, 8); 
+   color: black;
+   padding-left: 20px;
+   text-decoration: none;
+   margin: 0 70px;
+   box-shadow:2px 2px 2px rgb(131, 126, 126);
+   padding-right: 10px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   font-size: 25px;
+   border-radius: 8px;
+   font-weight: bolder;
+text-align: center;
+}.l-icons a{
+    color: black;
+    font-size: 30px;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0px 30px 30px;
+}.l-icons a:hover{
+    color: black;
+}@media(max-width:786px){
+    .l-container{
+        flex-direction: column;
+    }
+}.why{
+    align-items: center;
+}.w{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 60px;
+}.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+    
+}.product-item{
+    background-color: rgb(249, 248, 248);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(111, 108, 108);
+    text-align: center;
+}.product-name{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+@media (max-width:786px){
+    .product-container{
+        grid-template-columns: column;
+    }.product-item{
+        grid-template-columns: column;
+    }
+}.p{
+    align-items: center;
+    justify-content: center;
+}.pulse{
+    padding-top: 150px;
+    text-align: justify;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-left: 80px;
+}.a{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}@media(max-width:786px){
+    .a{
+        text-align: center;
+    }
+}.watch-container{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+   width: 100%;
+   padding-top: 90px;
+ }.watch-image-container{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+ }.watch-image{
+    width: 100%;
+    height: auto;
+    display: block;
+ }.watch-banner{
+   flex: 1.2;
+   background-color: orange;
+   color: white;
+   padding: 0 20px 20px 20px;
+   clip-path:inset(1% 20% 15% 10%); 
+
+   box-sizing: border-box;
+ }
+ .watch-title{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+ }
+ .watch-features{
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+ }@media (max-width: 786px)
+{.watch-container{
+    flex-direction: column;
+}.watch-banner{
+    clip-path: none;
+    padding: 20px;
+    width: 100%;
+}
+}/*footer*/
+footer{
+    background-color: #DCFF16;
+    padding: 40px 5%;
+    color:black ;
+}.f-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}.f-l-section{
+    flex-basis: 25%;
+ width: 300px;
+}.lo{
+    width: 200px;
+    height: auto;
+}.f-name{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10px;
+}.f-links, .f-contact{
+flex-basis: 15%;
+font-size: 23px;
+width: 150px;
+padding-top: 30px;
+}h4{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: black;
+}ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}.f-social{
+    margin-top: 20px;
+    text-align: right;
+    gap: 80px;
+}.f-social a{
+    color: black;
+    font-size: 30px;
+    margin-left: 15px;
+    gap: 30px;
+    text-decoration: none;
+}@media(max-width:768px){
+    .f-container{
+        display: flex;
+    }.f-l-section{
+        display: flex;
+    }.f-social{
+        display: flex;
+    }
+}
+    </style>
+</head>
+<body>
+<header class="navbar">
+        <div class="top-section">
+            <div class="logo-container">
+                
+                <img src="logo.png" alt="Company Logo" class="logo">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search For">
+                    <i class="fa fa-search search-icon"></i>
+                </div>
+            </div>
+             <div class="nav-icons-register">
+                <i class="fa fa-shopping-cart icon"></i>
+                <i class="fa fa-bell icon"></i>
+                <button class="register-btn">Register</button>
+            </div>
+        </div>
+<div class="bottom-section">
+            <span class="company-name">Tech Company</span>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="http://127.0.0.1:5501/aboutus.html">About Us</a></li>
+                    <li><a href="http://127.0.0.1:5501/product.html">Product</a></li>
+                    <li><a href="http://127.0.0.1:5501/service.html">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="http://127.0.0.1:5501/blog.html">Blogs</a></li>
+                </ul>
+            </nav>
+        </div></header>
+        <div class="start-container">
+            <div class="start-section">
+                <h1>Startup Tech Product</h1>
+                <p>This speaks directly to what<br>
+                tech founders and engineers <br>
+            care about:speed, reliabilty, and growth</p>
+            </div>
+            <div class="robo-image">
+                <img src="robot.jpg" alt="robot" class="right">
+            </div>
+        </div>
+        <div class="l-container">
+            <a href="#" class="start-btn">Let's Start</a>
+            <div class="l-icons">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="why"><h1 class="w">Why Choose Us</h1></div>
+<div class="product-container">
+    
+    <div class="product-item">
+        <img src="Rectangle 177.png" alt="rectangle">
+        <div class="product-name">Magnetic Charging Cable</div>
+        </div>
+    <div class="product-item">
+        <img src="craiyon_192751_image 1.png" alt="watch">
+        <div class="product-name">Extra Silicon Strap</div>
+    </div>
+    <div class="product-item">
+        <img src="craiyon_193836_image 1.png" alt="pink watch">
+        <div class="product-name">Quick Strat Guide</div>
+    </div>
+    <div class="product-item">
+        <img src="craiyon_193035_image 1.png" alt="">
+        <div class="product-name">Fitness Tracker</div>
+</div></div>
+<div class="p">
+    <p class="pulse">Pulsex Pro Isn't just a smartwatch-it's your personal coach,health monitor,<br>
+    and digital assistant all in one sleek device. Build for those who demand<br>
+more from their tech, it helps you stay connected,</p></div>
+<h3 class="a">Product In context</h3>
+
+<div class="watch-container">
+    <div class="watch-image-container">
+        <img src="craiyon_195659_image 1.png" alt="craiyon_195659_image" class="watch-image">
+        </div>
+    <div class="watch-banner">
+        <h1 class="watch-title">Xiaomi Watch S3 1.43" AMOLED Smartwatch</h1>
+        <p class="watch-feature">Pack a 520mAh battery and adaptive refresh rate <br>
+    to balance performance and longevity. It's a<br>
+    feature-rich choice,especially if you want a stylish<br>
+LTE-ready wearable</p>
+</div></div>
+<div class="watch-container">
+<div class="watch-image-container">
+       <img src="craiyon_195804_image 1.png" alt="craiyon_195804_image" class="watch-image"> 
+    </div>
+    <div class="watch-banner">
+        <h1 class="watch-title">Xiaomi Watch S3 1.43" AMOLED Smartwatch</h1>
+        <p class="watch-feature">Features a 1.43" AMOLED display with 6oo nits brightness and<br>
+        sharp 326 ppi, ideal for crisp visuals in outdoor lighting.<br>
+    Offers LTE connectivity, allowing for phone-free calls and data</p></div>
+</div></div>
+<footer>
+<div class="f-container">
+    <div class="f-l-section">
+        <img src="logogreen.png" alt="company logo" class="lo">
+        <div class="f-name">Tech Company</div>
+    </div>
+    <div class="f-links">
+        <h4>Company</h4>
+        <ul>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Testimonial</a></li>
+        </ul>
+    </div>
+    <div class="f-links">
+        <h4>Support</h4>
+        <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Webians</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </div>
+<div class="f-links">
+    <h4>Links</h4>
+    <ul>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">All in ond</a></li>
+    </ul>
+</div>
+<div class="f-contact">
+    <h4>Contact US</h4>
+    <div class="contact-info">
+        <p>&#9742; +917789879034</p>
+        <p>&#9993; nazer2000@gmail</p>
+    </div>
+</div>
+</div>
+<div class="f-social">
+    <a href="#" class="google"><i class="fab fa-google"></i></a>
+    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+
+</div></footer>
+    </body>
+</html>
+  
+    

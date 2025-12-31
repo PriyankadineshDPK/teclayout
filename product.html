@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abel&family=Buda:wght@300&family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}body{
+    font-family:   Inika;
+}
+/*navbar*/
+.navbar {
+    background-color: #e6b3ff; 
+    padding: 10px 5%;
+    color: black;
+}
+
+.top-section, .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px; 
+    height: 40px;
+    height: auto;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 20px;
+    color:black;
+    font-weight: bolder;
+    margin-left: 0;
+}
+
+
+.search-bar {
+    position: relative;
+    width: 400px; align-items: center;
+    margin-left: 50px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 20px 40px 20px 15px; 
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 400px;
+    
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+    width: 30px;
+    margin-right: 0;
+}
+.nav-icons-register {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.register-btn {
+    background-color: #13B82E;
+    color:black;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.register-btn:hover {
+    background-color: #13B82E;
+}
+.nav-links ul {
+    list-style: none; 
+    display: flex;
+    margin-left: 10px;
+    margin-right: 30px;
+    justify-content: space-between;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0 5px 15px;
+    display: block;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-links ul li a:hover {
+    background: rgb(121, 121, 243);
+    border: 1px solid rgb(107, 107, 222);
+}
+@media (max-width: 992px) {
+    .top-section, .bottom-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }}/*Product*/
+    h1{
+        font-size: 50px;
+        margin-left: 30px;
+        margin-top: 200px;
+        margin-bottom: 70px;
+    }
+    .container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: white;
+   overflow: hidden;
+    width: 350px; 
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    font-size: 25px;
+    margin-left: 0;
+    color: #333;
+}
+
+.product-info .price {
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.product-info .rating {
+    margin-bottom: 15px;
+    color:gold;
+}
+
+.buy-btn {
+    background-color: #13B82E; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: auto; 
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+@media screen and (min-width: 600px) {
+    .product-card {
+        width: calc(50% - 10px); 
+    }
+}
+@media screen and (min-width: 992px) {
+    .product-card {
+        width: calc(33.33% - 14px);
+    }
+}
+/*footer*/
+footer{
+    background-color: #DCFF16;
+    padding: 40px 5%;
+    color:black ;
+}.f-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    flex-wrap: wrap;
+   
+    padding-bottom: 20px;
+}.f-l-section{
+    flex-basis: 25%;
+ width: 300px;
+}.lo{
+    width: 200px;
+    height: auto;
+}.f-name{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10px;
+}.f-links, .f-contact{
+flex-basis: 15%;
+font-size: 23px;
+width: 150px;
+padding-top: 30px;
+}h4{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: black;
+}ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}.f-social{
+    margin-top: 20px;
+    text-align: right;
+    gap: 80px;
+}.f-social a{
+    color: black;
+    font-size: 30px;
+    margin-left: 15px;
+    gap: 30px;
+    text-decoration: none;
+}@media(max-width:768px){
+    .f-container{
+        display: flex;
+    }.f-l-section{
+        display: flex;
+    }.f-social{
+        display: flex;
+    }
+}a:hover{
+    background-color: blue;
+    cursor: pointer;
+    border: 5px solid blue;
+}
+    </style>
+</head>
+<body>
+   <header class="navbar">
+        <div class="top-section">
+            <div class="logo-container">
+                
+                <img src="logo.png" alt="Company Logo" class="logo">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search For">
+                    <i class="fa fa-search search-icon"></i>
+                </div>
+            </div>
+             <div class="nav-icons-register">
+                <i class="fa fa-shopping-cart icon"></i>
+                <i class="fa fa-bell icon"></i>
+                <button class="register-btn">Register</button>
+            </div>
+        </div>
+<div class="bottom-section">
+            <span class="company-name">Tech Company</span>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="http://127.0.0.1:5501/home.html">Home</a></li>
+                    <li><a href="http://127.0.0.1:5501/aboutus.html">About Us</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="http://127.0.0.1:5501/service.html">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="http://127.0.0.1:5501/blog.html">Blogs</a></li>
+                </ul>
+            </nav>
+        </div></header> 
+        <h1>Categories</h1>
+        <div class="container">
+             <div class="product-card">
+                <a href="http://127.0.0.1:5501/c.html">
+            <img src="Rectangle 196.png" alt="Mobile"></a>
+            <div class="product-info">
+                <h3>Mobile</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <img src="Rectangle 197.png" alt="Laptop">
+            <div class="product-info">
+                <h3>Laptop</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <img src="Rectangle 198.png" alt="Tablet">
+            <div class="product-info">
+                <h3>Tablet</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="Rectangle 199.png" alt="Headphones">
+            <div class="product-info">
+                <h3>Headphones</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div> <div class="product-card">
+            <a href="http://127.0.0.1:5501/refrierator.html">
+            <img src="Rectangle 288.png" alt="Refrigerator"></a>
+            <div class="product-info">
+                <h3>Refrigerator</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+          <div class="product-card">
+            <a href="http://127.0.0.1:5501/c.html">
+            <img src="Rectangle 201.png" alt="Washing Machine"></a>
+            <div class="product-info">
+                <h3>Washing Machine</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <a href="http://127.0.0.1:5501/c.html">
+            <img src="Rectangle 202.png" alt="Watch"></a>
+            <div class="product-info">
+                <h3>Watch</h3>
+                <p class="price">$2000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="Rectangle 203.png" alt="Game Mauves">
+            <div class="product-info">
+                <h3>Game Mauves</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <img src="Rectangle 204.png" alt="R Vacuum Cleaner">
+            <div class="product-info">
+                <h3>R Vacuum Cleaner</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <img src="Rectangle 205.png" alt="Microwaves">
+            <div class="product-info">
+                <h3>Microwaves</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="Rectangle 206.png" alt="Coffee Maker">
+            <div class="product-info">
+                <h3>Coffee Maker</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <img src="Rectangle 207.png" alt="Dishwasher">
+            <div class="product-info">
+                <h3>Dishwasher</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <img src="Rectangle 208.png" alt="Cool Ac">
+            <div class="product-info">
+                <h3>Cool Ac</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <img src="Rectangle 209.png" alt="Big Bluetooth Speaker">
+            <div class="product-info">
+                <h3>Big Bluetooth Speaker</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <img src="Rectangle 210.png" alt="Power bank">
+            <div class="product-info">
+                <h3>Power bank</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <img src="Rectangle 211.png" alt="Air Buds">
+            <div class="product-info">
+                <h3>Air Buds</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <img src="Rectangle 200.png" alt="CCTV Camera">
+            <div class="product-info">
+                <h3>CCTV Camera</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+         <div class="product-card">
+            <img src="Rectangle 212.png" alt="Monitor">
+            <div class="product-info">
+                <h3>Monitor</h3>
+                <p class="price">$35000</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+     </div>
+
+    <footer>
+<div class="f-container">
+    <div class="f-l-section">
+        <img src="logogreen.png" alt="company logo" class="lo">
+        <div class="f-name">Tech Company</div>
+    </div>
+    <div class="f-links">
+        <h4>Company</h4>
+        <ul>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Testimonial</a></li>
+        </ul>
+    </div>
+    <div class="f-links">
+        <h4>Support</h4>
+        <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Webians</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </div>
+<div class="f-links">
+    <h4>Links</h4>
+    <ul>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">All in ond</a></li>
+    </ul>
+</div>
+<div class="f-contact">
+    <h4>Contact US</h4>
+    <div class="contact-info">
+        <p>&#9742; +917789879034</p>
+        <p>&#9993; nazer2000@gmail</p>
+    </div>
+</div>
+</div>
+<div class="f-social">
+    <a href="#" class="google"><i class="fab fa-google"></i></a>
+    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+
+        </div>
+    </footer>
+    
+
+</body>
+</html>
